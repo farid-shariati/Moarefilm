@@ -192,7 +192,7 @@ export default function Navbar() {
           </IconButton>
           <Box className={classes.account}>
             <AccountCircleIcon className={classes.accounticon} />
-            hi, Peymanhc
+            hi, Farid
           </Box>
           <Box className={classes.links}>
             <NavLink

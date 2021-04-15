@@ -13,7 +13,7 @@ const Items = [
     rate: 5,
   },
   {
-    title: "peymanhc",
+    title: "farid",
     rate: 5,
   },
   {
@@ -29,7 +29,7 @@ const Items = [
     rate: 5,
   },
   {
-    title: "Mamad Nood",
+    title: "test ",
     rate: 5,
   },
 ];
@@ -70,7 +70,7 @@ function Profile(): ReactElement {
   return (
     <Box>
       <ProfileHeader
-        title={"Peyman Hadavi"}
+        title={"Farid Shariati"}
         Subtext=""
         button={"Log Out"}
         img={ProfileImg}
