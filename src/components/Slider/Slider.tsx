@@ -91,12 +91,6 @@ const Slide: React.FC<Props> = ({ Creators }) => {
         slidesPerView: 2,
       },
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    renderNextButton: () => <NextArrow className="swiper-button-next" />,
-    renderPrevButton: () => <PrevArrow />,
   };
   return (
     <Box className={classes.slide}>

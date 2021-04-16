@@ -51,7 +51,7 @@ function Home() {
             title={'Movie recommendations based on your taste'}
             Subtext=""
             button={'Find What You Like'}
-            link="you-like"
+            link="search"
             img={HeaderBanner}
           />
           <Titles

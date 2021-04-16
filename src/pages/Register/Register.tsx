@@ -4,8 +4,8 @@ import LoginRegisterPoster from "../../components/LoginRegisterPoster/LoginRegis
 import HeaderBanner from "../../images/img19.jpg";
 import { makeStyles } from "@material-ui/styles";
 import { Input, Password } from "../../components/Input/Input";
-import { useForm } from "react-hook-form";
-import axios from "../../shared/axios-datas";
+// import { useForm } from "react-hook-form";
+// import axios from "../../shared/axios-datas";
 
 const useStyles = makeStyles((theme: Theme) => ({
   wrapper: {
@@ -67,17 +67,17 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 const Register = () => {
   const classes = useStyles();
-  const { handleSubmit, register } = useForm();
-  let url = `/authentication/session/new?api_key=${process.env.REACT_APP_API_KEY}`;
-  const onSubmit = (values: any) =>
-    axios
-      .post(url, values)
-      .then((res) => {
-        console.log("res :", res);
-      })
-      .catch((err) => {
-        console.log("err :", err);
-      });
+  // const { handleSubmit, register } = useForm();
+  // let url = `/authentication/session/new?api_key=${process.env.REACT_APP_API_KEY}`;
+  // const onSubmit = (values: any) =>
+  //   axios
+  //     .post(url, values)
+  //     .then((res) => {
+  //       console.log("res :", res);
+  //     })
+  //     .catch((err) => {
+  //       console.log("err :", err);
+  //     });
   return (
     <Box className={classes.wrapper}>
       <Box className={classes.poster}>
@@ -104,16 +104,16 @@ const Register = () => {
             Sign Up
           </Typography>
           <Box className={classes.inputbase}>
-            <Input inputref={register} name="email address" />
+            <Input name="email address" />
           </Box>
           <Box className={classes.inputbase}>
-            <Input inputref={register} name="username" />
+            <Input name="username" />
           </Box>
           <Box className={classes.inputbase}>
-            <Password inputref={register} Password="password" />
+            <Password inputref="" Password="password" />
           </Box>
           <Box className={classes.inputbase}>
-            <Password inputref={register} Password="confrim password" />
+            <Password inputref="" Password="confrim password" />
           </Box>
           <Box className={classes.bottomform}>
             <Box className={classes.bottom}>
@@ -121,7 +121,7 @@ const Register = () => {
                 already in our army?
               </Typography>
               <Button
-                onClick={handleSubmit(onSubmit)}
+                onClick={() => alert("for sign up you should go to themoviedb")}
                 className={classes.Loginbtn}
                 color="primary"
                 variant="contained"
