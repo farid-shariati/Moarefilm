@@ -1,9 +1,7 @@
 import React from "react";
 import CastCard from "../CastCard/CastCard";
-import { Box, Theme, IconButton } from "@material-ui/core";
+import { Box, Theme } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Swiper from "react-id-swiper";
 import "swiper/swiper.scss";
 
@@ -46,25 +44,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginLeft: -10,
   },
 }));
-
-const NextArrow = (props: any) => {
-  const classes = useStyles();
-  const { onClick } = props;
-  return (
-    <IconButton onClick={onClick} className={classes.nextbtn}>
-      <NavigateNextIcon />
-    </IconButton>
-  );
-};
-function PrevArrow(props: any) {
-  const classes = useStyles();
-  const { onClick } = props;
-  return (
-    <IconButton className={classes.prev} onClick={onClick}>
-      <ChevronLeftIcon />
-    </IconButton>
-  );
-}
 
 interface Props {
   Creators?: any;
